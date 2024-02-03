@@ -17,7 +17,7 @@ def UpdateLeaderBoard(username,wpm):
     leaderboard[username] = wpm
     
     #sort
-    leaderboard = dict(sorted(leaderboard.items(),key = lambda item:item[1] ,reverse=True))
+    leaderboard = dict(sorted(leaderboard.items(),key = lambda item:item[1] ,reverse=True) )
 
     #python-dict ==>json
     with open ("LeaderBoard.json","w") as g:
