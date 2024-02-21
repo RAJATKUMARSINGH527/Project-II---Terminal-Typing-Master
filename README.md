@@ -1,1 +1,1 @@
-
+Terminal-based Typing Master is a command-line tool designed for honing your typing skills in a minimalist environment. 🖥️👩‍💻 With various modes like speed, accuracy, and endurance challenges, it offers a gamified approach to improving typing proficiency. 🏆🎮 Track your progress, compete with friends, and achieve mastery over the keyboard with this sleek, text-based interface. ⌨️💪 Ideal for developers, writers, and anyone seeking to enhance their typing speed and accuracy.
