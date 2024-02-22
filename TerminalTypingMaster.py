@@ -2,6 +2,10 @@ import random
 import time
 import json
 
+import os
+os.system("color")
+from termcolor import colored
+
 def UpdateLeaderBoard(username,wpm):
     
     #json--python dict
@@ -26,18 +30,18 @@ def UpdateLeaderBoard(username,wpm):
 def ShowLeaderBoard():
     with open ("LeaderBoard.json","r") as file :
         leaderboard=json.load (file)
-    return leaderboard #leadferboard ek dictionary hai
+    return leaderboard #leaderboard ek dictionary hai
 
 def main():
-    # UpdateLeaderBoard("kishan",28.2454)
-    print("Welcome to Terminal Typing Master!")
-    username = input("Enter your username: ")
+    # UpdateLeaderBoard
+    print(colored("\nWelcome to Terminal Typing Master!⌨️","black","on_white"))
+    username = input("\nEnter your username : ")
 
     while True:
         print("\nOptions:")
-        print("1. Start Typing Test")
+        print("1. Start Typing Test ⌨️")
         print("2. Show Leaderboard")
-        print("3. Exit")
+        print("3. Exit ❌")
         choice = input("Enter your choice: ")
 
         if choice == "1":
@@ -48,7 +52,7 @@ def main():
 
             for word in words:
                 print(word)
-                user_input = input("Type the word (Ctrl + Q to quit): ")
+                user_input = input("Type the word (Ctrl + Q to quit ❌): ")
                 if user_input.lower() == "ctrl+q":
                     print("Exiting Typing Test...")
                     break
@@ -72,11 +76,11 @@ def main():
                 rank+=1
             
         elif choice == "3":
-            print("Exiting Terminal Typing Master...")
+            print("Exiting Terminal Typing Master⌨️...")
             break
 
         else:
-            print("Invalid choice. Please choose again.")
+            print("Invalid❎choice!! Please choose again.")
 
 def load_words_from_category(category):
     if category == "animals":
@@ -91,5 +95,5 @@ def calculate_wpm(words_typed, time_taken):
     wpm = (words_typed / 5) / (time_taken / 60)  # Assuming 5 words per sentence
     return wpm
 
-if __name__ == "__main__":
+if _name_ == "_main_":
     main()
