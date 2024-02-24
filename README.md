@@ -31,9 +31,7 @@ To install Terminal Typing Master, follow these steps:
 3. Install the necessary dependencies:
 
     
-    ```
-        pip install random
-    ```    
+
     ```
         pip install time
     ```    
