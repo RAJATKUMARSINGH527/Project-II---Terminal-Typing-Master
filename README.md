@@ -62,7 +62,7 @@ Follow the on-screen instructions to initiate typing practice sessions and impro
 ![Intro](starting.png)
 
 ## Results
-![Results](results.png)
+![Results](result.png)
 
 ## Leaderboard
 ![Leaderboard](leaderboard.png)
